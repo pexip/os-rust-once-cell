@@ -1,0 +1,44 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test once_cell 1.16.0 --all-targets --all-features
+Features: test-name=rust-once-cell:@
+Depends: dh-cargo (>= 18), librust-crossbeam-utils-0.8+default-dev (>= 0.8.7-~~), librust-lazy-static-1+default-dev, librust-regex-1+default-dev (>= 1.2.0-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test once_cell 1.16.0 --all-targets --no-default-features --features alloc
+Features: test-name=librust-once-cell-dev:alloc
+Depends: dh-cargo (>= 18), librust-crossbeam-utils-0.8+default-dev (>= 0.8.7-~~), librust-lazy-static-1+default-dev, librust-regex-1+default-dev (>= 1.2.0-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test once_cell 1.16.0 --all-targets 
+Features: test-name=librust-once-cell-dev:default
+Depends: dh-cargo (>= 18), librust-crossbeam-utils-0.8+default-dev (>= 0.8.7-~~), librust-lazy-static-1+default-dev, librust-regex-1+default-dev (>= 1.2.0-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test once_cell 1.16.0 --all-targets --no-default-features --features parking_lot
+Features: test-name=librust-once-cell-dev:parking_lot
+Depends: dh-cargo (>= 18), librust-crossbeam-utils-0.8+default-dev (>= 0.8.7-~~), librust-lazy-static-1+default-dev, librust-regex-1+default-dev (>= 1.2.0-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test once_cell 1.16.0 --all-targets --no-default-features --features parking_lot_core
+Features: test-name=librust-once-cell-dev:parking_lot_core
+Depends: dh-cargo (>= 18), librust-crossbeam-utils-0.8+default-dev (>= 0.8.7-~~), librust-lazy-static-1+default-dev, librust-regex-1+default-dev (>= 1.2.0-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test once_cell 1.16.0 --all-targets --no-default-features --features race
+Features: test-name=librust-once-cell-dev:race
+Depends: dh-cargo (>= 18), librust-crossbeam-utils-0.8+default-dev (>= 0.8.7-~~), librust-lazy-static-1+default-dev, librust-regex-1+default-dev (>= 1.2.0-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test once_cell 1.16.0 --all-targets --no-default-features --features std
+Features: test-name=librust-once-cell-dev:std
+Depends: dh-cargo (>= 18), librust-crossbeam-utils-0.8+default-dev (>= 0.8.7-~~), librust-lazy-static-1+default-dev, librust-regex-1+default-dev (>= 1.2.0-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test once_cell 1.16.0 --all-targets --no-default-features --features unstable
+Features: test-name=librust-once-cell-dev:unstable
+Depends: dh-cargo (>= 18), librust-crossbeam-utils-0.8+default-dev (>= 0.8.7-~~), librust-lazy-static-1+default-dev, librust-regex-1+default-dev (>= 1.2.0-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test once_cell 1.16.0 --all-targets --no-default-features
+Features: test-name=librust-once-cell-dev:
+Depends: dh-cargo (>= 18), librust-crossbeam-utils-0.8+default-dev (>= 0.8.7-~~), librust-lazy-static-1+default-dev, librust-regex-1+default-dev (>= 1.2.0-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
