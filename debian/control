@@ -10,7 +10,7 @@ Maintainer: Pexip AS <packaging@pexip.com>
 XSBC-Pexip-Original-Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 XSBC-Pexip-Original-Uploaders:
  Nikos Tsipinakis <nikos@tsipinakis.com>
-Standards-Version: 4.5.1
+Standards-Version: 4.6.1
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/once-cell]
 Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/once-cell
 X-Cargo-Crate: once_cell
@@ -39,22 +39,22 @@ Provides:
  librust-once-cell-1+race-dev (= ${binary:Version}),
  librust-once-cell-1+std-dev (= ${binary:Version}),
  librust-once-cell-1+unstable-dev (= ${binary:Version}),
- librust-once-cell-1.16-dev (= ${binary:Version}),
- librust-once-cell-1.16+alloc-dev (= ${binary:Version}),
- librust-once-cell-1.16+default-dev (= ${binary:Version}),
- librust-once-cell-1.16+parking-lot-dev (= ${binary:Version}),
- librust-once-cell-1.16+parking-lot-core-dev (= ${binary:Version}),
- librust-once-cell-1.16+race-dev (= ${binary:Version}),
- librust-once-cell-1.16+std-dev (= ${binary:Version}),
- librust-once-cell-1.16+unstable-dev (= ${binary:Version}),
- librust-once-cell-1.16.0-dev (= ${binary:Version}),
- librust-once-cell-1.16.0+alloc-dev (= ${binary:Version}),
- librust-once-cell-1.16.0+default-dev (= ${binary:Version}),
- librust-once-cell-1.16.0+parking-lot-dev (= ${binary:Version}),
- librust-once-cell-1.16.0+parking-lot-core-dev (= ${binary:Version}),
- librust-once-cell-1.16.0+race-dev (= ${binary:Version}),
- librust-once-cell-1.16.0+std-dev (= ${binary:Version}),
- librust-once-cell-1.16.0+unstable-dev (= ${binary:Version})
+ librust-once-cell-1.17-dev (= ${binary:Version}),
+ librust-once-cell-1.17+alloc-dev (= ${binary:Version}),
+ librust-once-cell-1.17+default-dev (= ${binary:Version}),
+ librust-once-cell-1.17+parking-lot-dev (= ${binary:Version}),
+ librust-once-cell-1.17+parking-lot-core-dev (= ${binary:Version}),
+ librust-once-cell-1.17+race-dev (= ${binary:Version}),
+ librust-once-cell-1.17+std-dev (= ${binary:Version}),
+ librust-once-cell-1.17+unstable-dev (= ${binary:Version}),
+ librust-once-cell-1.17.0-dev (= ${binary:Version}),
+ librust-once-cell-1.17.0+alloc-dev (= ${binary:Version}),
+ librust-once-cell-1.17.0+default-dev (= ${binary:Version}),
+ librust-once-cell-1.17.0+parking-lot-dev (= ${binary:Version}),
+ librust-once-cell-1.17.0+parking-lot-core-dev (= ${binary:Version}),
+ librust-once-cell-1.17.0+race-dev (= ${binary:Version}),
+ librust-once-cell-1.17.0+std-dev (= ${binary:Version}),
+ librust-once-cell-1.17.0+unstable-dev (= ${binary:Version})
 Breaks: librust-string-cache-dev (<< 0.8.4)
 Description: Single assignment cells and lazy values - Rust source code
  This package contains the source for the Rust once_cell crate, packaged by
