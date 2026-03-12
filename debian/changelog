@@ -1,3 +1,9 @@
+rust-once-cell (1.21.3-1+pexip25u4) pexip-trixie; urgency=medium
+
+  * Repair changelog + control file
+
+ -- Huw Jones <huw@pexip.com>  Thu, 12 Mar 2026 16:36:47 +0000
+
 rust-once-cell (1.21.3-1+pexip25u3) pexip-trixie; urgency=medium
 
   * Fix maintainers/uploaders
@@ -46,12 +52,54 @@ rust-once-cell (1.18.0-1) unstable; urgency=medium
 
  -- Peter Michael Green <plugwash@debian.org>  Sun, 16 Jul 2023 02:42:59 +0000
 
+rust-once-cell (1.17.0-1+pexip24u5) pexip; urgency=medium
+
+  * Rebuild with rustc 1.79
+
+ -- Huw Jones <huw@pexip.com>  Thu, 11 Jul 2024 10:40:42 +0100
+
+rust-once-cell (1.17.0-1+pexip24u4) pexip-bookworm; urgency=medium
+
+  * New versioning scheme
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 01 Feb 2024 16:31:57 +0000
+
+rust-once-cell (1.17.0-1pexip3) pexip-bookworm; urgency=medium
+
+  * Bookworm build for product distribution
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Sat, 09 Dec 2023 22:58:21 +0000
+
+rust-once-cell (1.17.0-1pexip2) pexip-bookworm; urgency=medium
+
+  * Initial bookworm build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 16 Nov 2023 10:30:45 +0000
+
+rust-once-cell (1.17.0-1pexip1) pexip; urgency=medium
+
+  * New upstream release
+
+ -- Huw Jones <huw@pexip.com>  Thu, 16 Mar 2023 18:05:29 +0000
+
+rust-once-cell (1.17.0-1+pexip24u5) pexip; urgency=medium
+
+  * Rebuild with rustc 1.79
+
+ -- Huw Jones <huw@pexip.com>  Thu, 11 Jul 2024 10:40:42 +0100
+
 rust-once-cell (1.17.0-1) unstable; urgency=medium
 
   * Team upload.
   * Package once_cell 1.17.0 from crates.io using debcargo 2.6.0 (Closes: #1030793)
 
  -- Peter Michael Green <plugwash@debian.org>  Tue, 07 Feb 2023 16:19:55 +0000
+
+rust-once-cell (1.16.0-1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Wed, 16 Nov 2022 22:15:23 +0000
 
 rust-once-cell (1.16.0-1) unstable; urgency=medium
 
