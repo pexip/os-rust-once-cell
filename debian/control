@@ -1,6 +1,5 @@
 Source: rust-once-cell
 Section: rust
-Priority: optional
 Build-Depends: debhelper-compat (= 13),
  dh-sequence-cargo
 Build-Depends-Arch: cargo:native <!nocheck>,
@@ -10,12 +9,12 @@ Maintainer: Pexip AS <packaging@pexip.com>
 XSBC-Pexip-Original-Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 XSBC-Pexip-Original-Uploaders:
  Nikos Tsipinakis <nikos@tsipinakis.com>
-Standards-Version: 4.7.2
+Standards-Version: 4.7.3
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/once-cell]
 Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/once-cell
 Homepage: https://github.com/matklad/once_cell
 X-Cargo-Crate: once_cell
-Rules-Requires-Root: no
+X-Cargo-Crate-Version: 1.21.4
 XS-Pexip-Upstream: http://ftp.debian.org/debian/ forky
 
 Package: librust-once-cell-dev
@@ -23,9 +22,9 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-critical-section-1+default-dev (>= 1.1.3-~~),
- librust-parking-lot-core-0.9-dev (>= 0.9.10-~~),
- librust-portable-atomic-1-dev (>= 1.8-~~)
+ librust-critical-section-1+default-dev (>= 1.1.3),
+ librust-parking-lot-core-0.9-dev (>= 0.9.10),
+ librust-portable-atomic-1-dev (>= 1.8)
 Provides:
  librust-once-cell+alloc-dev (= ${binary:Version}),
  librust-once-cell+atomic-polyfill-dev (= ${binary:Version}),
@@ -56,16 +55,16 @@ Provides:
  librust-once-cell-1.21+race-dev (= ${binary:Version}),
  librust-once-cell-1.21+std-dev (= ${binary:Version}),
  librust-once-cell-1.21+unstable-dev (= ${binary:Version}),
- librust-once-cell-1.21.3-dev (= ${binary:Version}),
- librust-once-cell-1.21.3+alloc-dev (= ${binary:Version}),
- librust-once-cell-1.21.3+atomic-polyfill-dev (= ${binary:Version}),
- librust-once-cell-1.21.3+critical-section-dev (= ${binary:Version}),
- librust-once-cell-1.21.3+default-dev (= ${binary:Version}),
- librust-once-cell-1.21.3+parking-lot-dev (= ${binary:Version}),
- librust-once-cell-1.21.3+portable-atomic-dev (= ${binary:Version}),
- librust-once-cell-1.21.3+race-dev (= ${binary:Version}),
- librust-once-cell-1.21.3+std-dev (= ${binary:Version}),
- librust-once-cell-1.21.3+unstable-dev (= ${binary:Version})
+ librust-once-cell-1.21.4-dev (= ${binary:Version}),
+ librust-once-cell-1.21.4+alloc-dev (= ${binary:Version}),
+ librust-once-cell-1.21.4+atomic-polyfill-dev (= ${binary:Version}),
+ librust-once-cell-1.21.4+critical-section-dev (= ${binary:Version}),
+ librust-once-cell-1.21.4+default-dev (= ${binary:Version}),
+ librust-once-cell-1.21.4+parking-lot-dev (= ${binary:Version}),
+ librust-once-cell-1.21.4+portable-atomic-dev (= ${binary:Version}),
+ librust-once-cell-1.21.4+race-dev (= ${binary:Version}),
+ librust-once-cell-1.21.4+std-dev (= ${binary:Version}),
+ librust-once-cell-1.21.4+unstable-dev (= ${binary:Version})
 Breaks: librust-string-cache-dev (<< 0.8.4)
 Description: Single assignment cells and lazy values - Rust source code
  Source code for Debianized Rust crate "once_cell"
